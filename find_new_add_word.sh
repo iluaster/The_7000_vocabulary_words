@@ -2,7 +2,7 @@
 IFS=$'\n'
 for i in `cat new_7000.txt`
 do
-	grep "$i" old_7000.txt || echo "$i" >> new_add_word.txt
+	grep "$i" old_7000.txt || (echo "$i" >> new_add_word.txt)
 done
 
 #find special words
